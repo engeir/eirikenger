@@ -1,0 +1,69 @@
+$background: #111;
+
+body {
+  padding: 25px;
+  background-color: $background;
+  color: white;
+  font-size: 18px;
+}
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff99aa;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.content {
+  max-width: 700px;
+  margin: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* From https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/ */
+/* and https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
+.topnav {
+  border-bottom:1px solid #333333;
+  border-width:2px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  color: pink;
+}
+
+.topnav-centered {
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
